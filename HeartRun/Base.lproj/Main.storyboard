@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wt5-kG-FaK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iOH-xF-bHX">
+            <objects>
+                <viewController id="Wt5-kG-FaK" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xEn-Sl-ELC"/>
+                        <viewControllerLayoutGuide type="bottom" id="QvO-J0-7bx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FxE-Fv-jVb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h60-0e-uIc">
+                                <rect key="frame" x="26" y="57" width="190" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht8-rW-IAD">
+                                <rect key="frame" x="224" y="109" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXf-Ng-xyd">
+                                <rect key="frame" x="80" y="156" width="160" height="160"/>
+                                <state key="normal" image="play1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startLargeBtnPressed:" destination="Wt5-kG-FaK" eventType="touchUpInside" id="XOz-nH-wPM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9f-wH-JPD">
+                                <rect key="frame" x="39" y="430" width="37" height="35"/>
+                                <state key="normal" image="music.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="isMusicBtnPressed:" destination="Wt5-kG-FaK" eventType="touchUpInside" id="RNn-7c-U97"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSR-LX-8ww">
+                                <rect key="frame" x="141" y="430" width="38" height="35"/>
+                                <state key="normal" image="heart.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgH-x5-vsn">
+                                <rect key="frame" x="244" y="433" width="38" height="30"/>
+                                <state key="normal" image="nextsong.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextSongBtnPressed:" destination="Wt5-kG-FaK" eventType="touchUpInside" id="vO6-MY-guK"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVf-ej-lqH">
+                                <rect key="frame" x="80" y="157" width="157" height="157"/>
+                                <state key="normal" image="pause.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseBtnPressed:" destination="Wt5-kG-FaK" eventType="touchUpInside" id="eK5-Jp-Cnm"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1v-cv-Vou">
+                                <rect key="frame" x="39" y="186" width="100" height="100"/>
+                                <state key="normal" image="smallstop.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopBtnPressed:" destination="Wt5-kG-FaK" eventType="touchUpInside" id="IK2-FR-lh7"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObE-4i-Sca">
+                                <rect key="frame" x="182" y="186" width="100" height="100"/>
+                                <state key="normal" image="smallplay.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startSmallBtnPressed:" destination="Wt5-kG-FaK" eventType="touchUpInside" id="t5O-GS-aWH"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAA-2L-QRN">
+                                <rect key="frame" x="41" y="188" width="97" height="98"/>
+                                <state key="normal" image="camera.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="Wt5-kG-FaK" eventType="touchUpInside" id="qWu-oA-2Ow"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o53-hb-9fn">
+                                <rect key="frame" x="182" y="186" width="100" height="101"/>
+                                <state key="normal" image="share.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareBtnPressed:" destination="Wt5-kG-FaK" eventType="touchUpInside" id="qin-M2-S76"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="isMusicBtn" destination="t9f-wH-JPD" id="FQS-qw-EcZ"/>
+                        <outlet property="miles" destination="h60-0e-uIc" id="TRg-hh-sPX"/>
+                        <outlet property="pauseBtn" destination="NVf-ej-lqH" id="LI8-Sj-1fu"/>
+                        <outlet property="shareBtn" destination="o53-hb-9fn" id="0hg-dk-p2F"/>
+                        <outlet property="startLargeBtn" destination="TXf-Ng-xyd" id="afq-10-lja"/>
+                        <outlet property="startSmallBtn" destination="ObE-4i-Sca" id="6nK-X9-hTB"/>
+                        <outlet property="stopBtn" destination="Z1v-cv-Vou" id="oKR-hT-QOo"/>
+                        <outlet property="takePhotoBtn" destination="yAA-2L-QRN" id="oLY-yi-Svm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHc-ia-cXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.png" width="512" height="512"/>
+        <image name="heart.png" width="80" height="80"/>
+        <image name="music.png" width="100" height="100"/>
+        <image name="nextsong.png" width="81" height="52"/>
+        <image name="pause.png" width="157" height="157"/>
+        <image name="play1.png" width="160" height="160"/>
+        <image name="share.png" width="160" height="160"/>
+        <image name="smallplay.png" width="100" height="100"/>
+        <image name="smallstop.png" width="100" height="100"/>
+    </resources>
+</document>
